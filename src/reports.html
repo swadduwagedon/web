@@ -1,0 +1,46 @@
+<div id="reports">
+    <div class="container">
+        <div class="jumbotron">
+            <div class="group">
+                <h4><strong>System Analytics</strong></h4>
+            </div>
+            <div class="input-group well">
+                <span>Search :</span>
+                <input id="lookFor" type="text" ng-model="search" placeholder="Search" class="right10">
+                <span>  City : </span>
+                <select ng-model="search" class="right10">
+                    <option ng-repeat="items in citys " value="{{items}}">{{items}}</option>
+                </select>
+                <span>  State : </span>
+                <select ng-model="search" class="right10">
+                    <option ng-repeat="items in states " value="{{items}}">{{items}}</option>
+                </select>
+                <span>  Country : </span>
+                <select ng-model="search" class="right10">
+                    <option ng-repeat="items in countrys " value="{{items}}">{{items}}</option>
+                </select>
+                <span>  Zip : </span>
+                <select ng-model="search" class="right10">
+                    <option ng-repeat="items in zips " value="{{items}}">{{items}}</option>
+                </select>
+                <span>  IP : </span>
+                <select ng-model="search" class="right10">
+                    <option ng-repeat="items in ips " value="{{items}}">{{items}}</option>
+                </select>
+                <a class="btn btn-default right10" href="#/home">Home</a>
+                <a class="btn btn-danger" href="#/home">system</a>
+            </div>
+        </div>
+        <div id="cover_page">
+            <ul class="list-group">
+                <li class="list-group-item" ng-class-odd="'color4A'" ng-class-even="'colorE2'" ng-repeat="item in data_base | filter: search">{{$index + 1}}__________________________________{{item[1]}}__________________________________
+                    <ul>
+                        <li class="line" ng-repeat="(key, val) in item" ng-class-odd="'colorA9'" ng-class-even="'colorCE'">
+                            {{key}}: {{val}}
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

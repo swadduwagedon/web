@@ -1,0 +1,164 @@
+<nav id="main_nav" class="container">
+    <div class="wheel_cover">
+        <div class="logo-container wheel1" id="wheel2"></div>
+        <div class="logo-container wheel1" id="wheel1"></div>
+        <div class="logo-container wheel1" id="wheel3"></div>
+    </div>
+    <span id="main_nav_name">SHAMMI WADDUWAGE DON</span>
+    <img class="icon right icon_hamburger" ng-click="show_menu()" src="../images/menu_hamber.png">
+    <ul class="navbar-links hidden-xs right hidden-sm">
+        <li><a ng-href="#/home" data-ng-click="send_GA('Page Menu Click', 'click on Home');">HOME</a></li>
+        <li><a class="move_to_about" ng-href="#/about" data-ng-click="send_GA('Page Menu Click', 'click on About');">ABOUT</a></li>
+        <li><a ng-href="#/contact" data-ng-click="send_GA('Page Menu Click', 'click on Contact');">CONTACT</a></li>
+    </ul>
+    <ul class="menu_hamburger">
+        <li><a ng-href="#/home" data-ng-click="send_GA('Hamburger Menu Click', 'click on Home');">HOME</a></li>
+        <li><a ng-href="#/about" data-ng-click="send_GA('Hamburger Menu Click', 'click on About');">ABOUT</a></li>
+        <li><a ng-href="#/contact" data-ng-click="send_GA('Hamburger Menu Click', 'click on Contact');">CONTACT</a></li>
+    </ul>
+</nav>
+<div class="container">
+    <section id="pannel1" class="pannelBox image-container">
+        <nav id="insection_nav">
+            <div class="wheel_cover">
+                <div class="logo-container wheel" id="wheel2"></div>
+                <div class="logo-container wheel" id="wheel1"></div>
+                <div class="logo-container wheel" id="wheel3"></div>
+            </div>
+            <span class="in_nav_name">SHAMMI WADDUWAGE DON</span>
+            <ul class="right navbar-links hidden-xs hidden-sm" id="nav_content">
+                <li><a data-ng-click="send_GA('Menu Click', 'click on Login');login_dialogs();">LOGIN</a></li>
+                <li><a class="move_to_about" ng-href="#/about" data-ng-click="send_GA('Main Page Menu Click', 'click on About');">ABOUT</a></li>
+                <li><a ng-href="#/contact" data-ng-click="send_GA('Main Page Menu Click', 'click on Contact');">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div id="hero_text" class="center_box">
+            <h2>CREATIVITY START<br>BY<br>LOOKING IN A DIFFERENT ANGLE</h2>
+            <a id="btn_know_me" ng-href="#/about" ng-click="send_GA('Main Page Interaction', 'Click on like to Know me');">LIKE TO KNOW ME</a>
+        </div>
+        <img id="down_arrow" src="../images/icon_downarrow.png" alt="down_Icon">
+    </section>
+    <section id="pannel3" class="pannelBox ">
+        <div class="col-md-6">
+            <figure>
+                <img src="../images/hero1.jpg" id="hero">
+            </figure>
+        </div>
+        <div class="col-md-6 about_text">
+            <h3>It's my pleasure to meet you...</h3>
+            <p>I’m a UI/Front-End developer based in Los Angeles with years of commercial web development experience. Currently working as Front-End developer for world’s largest Bollywood online entertainment company <a data-ng-click="send_GA('company Click', 'Eros Now');" href="http://erosnow.com/">EROSNOW</a> and previously work for a personal learning technology company <a href="https://declara.com/" data-ng-click="send_GA('company Click', 'declara');">declara</a>.</p>
+            <p>In my leisure time, I love spend time with family and exploring new trends. I like to take charge, plan ahead, and focus my energies on things I can control instead of reacting to or worrying about things over which I have little or no control. My belief on Buddhism make me happier and more compassionate. I'm always open for opportunities, quality employment opportunities with a progressive, fun, and intelligent group of tech people.</p>
+        </div>
+    </section>
+    <div id="pannel5_cover" class="row hidden-sm ">
+        <section id="pannel5" class="pannelBox ">
+            <div class="center_box">
+                <div>
+                    <h2>Front-End Developer</h2>
+                    <p>I am a front-end developer with experience in markup languages, styling and JavaScript frameworks.</p>
+                    <hr>
+                </div>
+                <div id="second_header" class="center_box">
+                    <h2>User Interface Engineer</h2>
+                    <p>I'm a design-minded engineer passionate about implementing the experience of a design in its best possible form.</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="col-md-4 tools_section">
+                <h3>My Favorite Tools</h3>
+                <ul>
+                    <li><img class="icon" src="../../images/angularjs.png"><span>AngularJs</span></li>
+                    <li><img class="icon" src="../../images/jquery.png"><span>jQuery</span></li>
+                    <li><img class="icon" src="../../images/gulp.png"><span>Gulp, Grunt</span></li>
+                    <li><img class="icon" src="../../images/boot.png"><span>Bootstrap, Foundation</span></li>
+                    <li><img class="icon" src="../../images/git.png"><span>Git, GitHub, bit-bucket</span></li>
+                    <li><img class="icon" src="../../images/html51.png"><span>HTML</span></li>
+                    <li><img class="icon" src="../../images/css.png"><span>CSS, Sass</span></li>
+                    <li><img class="icon" src="../../images/js.png"><span>JavaScript</span></li>
+                </ul>
+            </div>
+            <div class="col-md-4 hidden-sm padding0">
+                <div class="hidden-sm padding0" id="site_sketch"></div>
+            </div>
+            <div class="col-md-4 tools_section">
+                <h3 class="spacer">Information is power</h3>
+                <p>Learning is a never-ending process, and I constantly search for ways to further develop my touch. There are no boundaries with web design and development.
+                    <br> And I’m a major proponent of code readability and organization. It's about building something efficiently, not hastily. Readable, modular code leads to easier maintainability and fewer bugs. Which in the end, is just as important as meeting a deadline.</p>
+            </div>
+        </section>
+    </div>
+    <div id="pannel12_cover" class="row hidden-sm ">
+        <section id="pannel12" class="pannelBox ">
+            <div class="col-md-4 hidden-sm tools_section"></div>
+            <div class="col-md-4 padding0 hidden-sm">
+                <div class="hidden-sm" id="drawing"></div>
+            </div>
+            <div class="col-md-4 hidden-sm tools_section"></div>
+        </section>
+    </div>
+    <section id="pannel7" class="pannelBox row hidden-sm ">
+        <div class="col-md-4 hidden-sm tools_section"></div>
+        <div class="col-md-4 padding0 hidden-sm">
+            <div class="hidden-sm padding0" id="site"></div>
+        </div>
+        <div class="col-md-4 hidden-sm tools_section"></div>
+    </section>
+    <section id="pannel4" class="pannelBox "></section>
+    <section id="pannel9" class="pannelBox ">
+        <div class="jumbotron">
+            <h2 class="center_box">Get in touch with</h2>
+        </div>
+        <div class="col-md-6">
+            <form name="mail_form">
+                    <p class="width130">Name</p>
+                    <input class="inputArea" type="text" ng-model="name"  name="name" placeholder="Name" required="" ng-minlength="3" ng-maxlength="20">
+                    <span ng-show="mail_form.name.$error.required && !mail_form.name.$pristine">Name Required.</span>
+                    <br>
+                    <br>
+                    <p class="width130">Email Address</p>
+                    <input class="inputArea" type="email" placeholder="Email Address" ng-model="address"  name="address" required="">
+                    <span ng-show="mail_form.address.$error.email">enter a valid email</span>
+                    <span ng-show="mail_form.address.$error.required && !mail_form.address.$pristine">email address required</span>
+                    <br>
+                    <br>
+                    <p class="width130">Note</p>
+                    <input class="inputArea" type="text" ng-model="note"  required="" placeholder="Your Note">
+                    <span ng-show="mail_form.note.$error.required && !mail_form.note.$pristine">Note required</span>
+                    <br>
+                    <hr>
+                    <button class="buttons" ng-hide="mail_form.$valid">SEND MESSAGE</button>
+                    <button data-ng-click="sendMail();send_GA('message', note + ' from ' +  address );" class="buttons btn-success" ng-show="mail_form.$valid">SEND MESSAGE</button>
+            </form>
+        </div>
+        <div class="col-md-6 hidden-sm ">
+            <div class="center_box">
+                <h4>let's make it mutual</h4>
+                <h5 class="center_box">Now that you know a bit about me, let's make it mutual. Whether it be personal or professional, I'd love to hear from you. </h5>
+                <hr>
+                <br>
+                <h4>Find me elsewhere</h4>
+                <a href="https://www.linkedin.com/in/shammi-wadduwage-don-217030112"><img class="hover-translucify icons" src="../images/linkIN.png" alt="LinkedIn logo" title="LinkedIn" ng-click="send_GA('Page Interaction', 'Click on Linkedin');"></a>
+            </div>
+        </div>
+    </section>
+    <section id="pannel2" class="pannelBox plxScroll"> </section>
+    <!--         <video autobuffer autoplay preload="auto" loop type="video/mp4" class="plxScroll">
+            <source src="flowers.mp4" type="video/mp4"> Your browser does not support the video tag.
+        </video> -->
+    <!-- </section>
+    <section id="pannel6" class="pannelBox plxScroll"></section>
+    <div id="pannel10" class="pannelBox "></div>
+    <div id="pannel11" class="pannelBox "></div> -->
+    <footer>
+        <div class="panel-footer">
+            <hr>
+            <div class="center_box">
+                <a href='#home' onclick="parent.scrollTo(0,0);" ng-click="send_GA('Page Interaction', 'Click on Logo');"> <img ng-src="images/logo2.png" alt="logo" class='logo top10'></a>
+                <p class="top10">@2016 Design and developed by Shammi - All rights reserved.</p>
+                <p>version 16-2.0</p>
+            </div>
+            <hr>
+            <a href="http://don.shammi.us/#/home" ng-click="send_GA('Old Site', 'Click Old Site');"><h5> version 14/15-5</h5></a>
+        </div>
+    </footer>
+</div>
